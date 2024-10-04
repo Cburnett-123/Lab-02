@@ -123,7 +123,19 @@ plastic_data_all %>%
 
 ```{r Ex4, message = FALSE}
 # Write your code here to answer exercise 4
-
+#(plastic_data_all <- plastic_data_all %>% 
+ # rename(
+  #  reg = region,
+   # pop = population,
+    #mis_ocean = mismanaged_plastic_ocean,
+    #mis_plas = mismanaged_plastic, 
+    #pct_ocean = pct_mismanaged_plastic_ocean
+ # ))
+  
+  plastic_data_all %>% 
+ str_replace_all( "Latin America and The Caribbean", "LAC")
+ 
+  
 
 
 ```
